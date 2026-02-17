@@ -1,0 +1,9 @@
+
+{
+  "name": "Inaara Web Solutions",
+  "description": "A futuristic, AI-powered growth agency website featuring high-performance digital solutions, automated workflows, and cinematic branding.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

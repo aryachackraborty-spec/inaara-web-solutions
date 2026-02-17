@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INAARA WEB SOLUTIONS | AI Powered Growth Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#25d1f4',
+                        accent: '#7c3aed',
+                        background: '#020617',
+                        card: '#0a0b1e',
+                        navy: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        .grid-bg {
+            background-image: linear-gradient(rgba(37, 209, 244, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(37, 209, 244, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .glass {
+            background: rgba(37, 209, 244, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(37, 209, 244, 0.1);
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(37, 209, 244, 0.5);
+        }
+        .neon-border:hover {
+            box-shadow: 0 0 20px rgba(37, 209, 244, 0.3);
+            border-color: rgba(37, 209, 244, 0.5);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #25d1f4;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.574.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background text-slate-100 font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
